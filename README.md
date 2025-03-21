@@ -1,4 +1,4 @@
-Below is a sample `README.md` file for your project. It provides an overview of the fine-tuning process, the tools used, and instructions for reproducing the results or using the fine-tuned model.
+
 
 ---
 
@@ -15,18 +15,13 @@ This repository contains the code and instructions for fine-tuning the `Meta-Lla
 
 ## Hugging Face Model
 The fine-tuned model is available on Hugging Face:  
-[Link to Fine-Tuned Model](https://huggingface.co/your-username/your-model-name)
+[Link to Fine-Tuned Model]([https://huggingface.co/sriyaflows/gprmax_8])
 
 ## Requirements
 To reproduce the fine-tuning process or use the fine-tuned model, ensure you have the following dependencies installed:
 
 ```bash
-pip install torch
-pip install transformers
-pip install datasets
 pip install unsloth
-pip install bitsandbytes
-pip install accelerate
 ```
 
 ## Fine-Tuning Process
@@ -136,7 +131,7 @@ To use the fine-tuned model, load it from Hugging Face:
 ```python
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-model_name = "your-username/your-model-name"
+model_name = "sriyaflows/gprmax_8"
 model = AutoModelForCausalLM.from_pretrained(model_name)
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 
@@ -151,7 +146,7 @@ print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 The fine-tuned model achieves improved performance on the `gprmax_train` dataset, with reduced memory usage and faster training times compared to traditional fine-tuning methods.
 
 ## License
-This model is licensed under the same terms as the base `Meta-Llama-3.1-8B-Instruct-bnb-4bit` model. Refer to the [Hugging Face model card](https://huggingface.co/Meta-Llama-3.1-8B-Instruct-bnb-4bit) for details.
+This model is licensed under the same terms as the base `Meta-Llama-3.1-8B-Instruct-bnb-4bit` model. Refer to the [Hugging Face model card](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct) for details.
 
 ## Acknowledgments
 - Thanks to Hugging Face for the `transformers` library.
@@ -160,4 +155,3 @@ This model is licensed under the same terms as the base `Meta-Llama-3.1-8B-Instr
 
 ---
 
-Feel free to modify this `README.md` to suit your specific needs!
