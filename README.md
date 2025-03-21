@@ -65,7 +65,7 @@ model, tokenizer = FastLanguageModel.from_pretrained(
 
 # Prepare the dataset
 from datasets import load_dataset
-dataset = load_dataset("gprmax_train")
+dataset = load_dataset("IraGia/gprMax_Train")
 
 # Fine-tune the model
 model = FastLanguageModel.get_peft_model(
