@@ -17,7 +17,7 @@ This repository contains the code and instructions for fine-tuning the `Meta-Lla
 
 ## Hugging Face Model
 The fine-tuned model is available on Hugging Face:  
-[Link to Fine-Tuned Model]([https://huggingface.co/sriyaflows/gprmax_8])
+[Link to Fine-Tuned Model](https://huggingface.co/sriyaflows/gprmax_8)
 
 ## Requirements
 To reproduce the fine-tuning process or use the fine-tuned model, ensure you have the following dependencies installed:
