@@ -172,3 +172,4 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+Llama3_1_8B_gprmax.ipynb
